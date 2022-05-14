@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnist-deployment
+  labels:
+    app: mnist
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mnist
+  template:
+    metadata:
+      labels:
+        app: mnist
+    spec:
+      containers:
+      - name: mnist
+        image: torpeden88/mnist-test:v1
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do python3 mnist-test-local.py; sleep 100;done"]

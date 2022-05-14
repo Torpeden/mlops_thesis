@@ -1,0 +1,7 @@
+pachctl			2.1.1
+pachd			2.1.3
+pip3			20.0.2 (Docker), 21.1.2 (Kubeflow)
+python3			3.8.10
+tensorflow		2.8.0
+tensorflow_datasets	4.5.2
+ubuntu			20.04
