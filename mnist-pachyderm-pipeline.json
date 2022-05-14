@@ -5,6 +5,6 @@
   "description": "A pipeline that performs MNIST digit classification by using the Tensorflow library.",
   "transform": {
     "cmd": [ "python3", "/mnist-test.py" ],
-    "image": "torpeden88/mnist-test"
+    "image": "torpeden88/mnist-test:latest"
   }
 }
