@@ -6,5 +6,12 @@
   "transform": {
     "cmd": [ "python3", "/mnist-test.py" ],
     "image": "torpeden88/mnist-test:latest"
+  },
+  "input": {
+    "cron": {
+      "name": "tick",
+      "spec": "@every 100s",
+      "overwrite": true
+    }
   }
 }
