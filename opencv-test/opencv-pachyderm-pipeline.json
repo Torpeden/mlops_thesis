@@ -8,6 +8,10 @@
     "image": "torpeden88/opencv-test:latest"
   },
   "input": {
+    "pfs": {
+      "repo": "images",
+      "glob": "/*"
+    },
     "cron": {
       "name": "tick",
       "spec": "@every 100s",
