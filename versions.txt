@@ -1,7 +1,38 @@
+gke cluster master	1.21.10-gke.2000
+helm			3.8.0
 pachctl			2.1.1
 pachd			2.1.3
-pip3			20.0.2 (Docker), 21.1.2 (Kubeflow)
-python3			3.8.10
+pip3			20.0.2 (Docker), 21.1.2 (Kubeflow), 22.1 (Polyaxon)
+polyaxon		1.17.3.post1
+python3			3.8.10 (Docker & Kubeflow), 3.9.12 (Polyaxon)
 tensorflow		2.8.0
 tensorflow_datasets	4.5.2
 ubuntu			20.04
+
+Jupyter core (Kubeflow):
+jupyter core     : 4.7.1
+jupyter-notebook : 6.4.0
+qtconsole        : not installed
+ipython          : 7.24.1
+ipykernel        : 5.5.5
+jupyter client   : 6.1.12
+jupyter lab      : 3.0.16
+nbconvert        : 6.0.7
+ipywidgets       : 7.6.3
+nbformat         : 5.1.3
+traitlets        : 5.0.5
+
+Jupyter core (Polyaxon):
+IPython          : 8.3.0
+ipykernel        : 6.13.0
+ipywidgets       : 7.7.0
+jupyter_client   : 7.3.1
+jupyter_core     : 4.9.2
+jupyter_server   : 1.17.0
+jupyterlab       : 3.4.0
+nbclient         : 0.6.3
+nbconvert        : 6.5.0
+nbformat         : 5.4.0
+notebook         : 6.4.11
+qtconsole        : not installed
+traitlets        : 5.2.0

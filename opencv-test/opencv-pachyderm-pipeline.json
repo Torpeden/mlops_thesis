@@ -1,0 +1,17 @@
+{
+  "pipeline": {
+    "name": "opencv-test"
+  },
+  "description": "A pipeline that performs image edge detection by using the OpenCV library.",
+  "transform": {
+    "cmd": [ "python3", "/opencv-test.py" ],
+    "image": "torpeden88/opencv-test:latest"
+  },
+  "input": {
+    "cron": {
+      "name": "tick",
+      "spec": "@every 100s",
+      "overwrite": true
+    }
+  }
+}
