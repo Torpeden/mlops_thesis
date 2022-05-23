@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: opencv
-        image: torpeden88/opencv-test:latest
+        image: torpeden88/opencv-test-baseline:latest
         command: ["/bin/sh"]
         args: ["-c", "while true; do python3 opencv-test.py; sleep 100;done"]
