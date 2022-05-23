@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 # Install python3.
 RUN apt-get update -qqy \
-    && apt-get install -qqy python3 python3-pip \
+    && apt-get install -qqy wget python3 python3-pip \
     && apt-get clean
 
 # Download and duplicate image.
@@ -10,7 +10,7 @@ RUN mkdir images out \
     && cd images \
     && wget http://imgur.com/46Q8nDz.png \
     && mv 46Q8nDz.png liberty-1.png \
-    && for i in {2..100}; do cp liberty-1.png liberty-$i.png; done
+    && for i in $(seq 2 100); do cp liberty-1.png liberty-$i.png; done
 
 # Check python3 version and install opencv and matplotlib.
 RUN python3 --version && pip3 install opencv-python-headless matplotlib
