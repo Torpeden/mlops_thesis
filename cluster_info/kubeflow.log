@@ -1,0 +1,138 @@
+addonsConfig:
+  gcePersistentDiskCsiDriverConfig:
+    enabled: true
+  httpLoadBalancing: {}
+  kubernetesDashboard:
+    disabled: true
+  networkPolicyConfig:
+    disabled: true
+autopilot: {}
+autoscaling:
+  autoprovisioningNodePoolDefaults:
+    imageType: COS_CONTAINERD
+    oauthScopes:
+    - https://www.googleapis.com/auth/logging.write
+    - https://www.googleapis.com/auth/monitoring
+    - https://www.googleapis.com/auth/devstorage.read_only
+    serviceAccount: kubeflow-vm@seraphic-disk-341414.iam.gserviceaccount.com
+  autoscalingProfile: BALANCED
+  enableNodeAutoprovisioning: true
+  resourceLimits:
+  - maximum: '128'
+    resourceType: cpu
+  - maximum: '2000'
+    resourceType: memory
+  - maximum: '16'
+    resourceType: nvidia-tesla-k80
+binaryAuthorization: {}
+clusterIpv4Cidr: 10.72.0.0/14
+createTime: '2022-04-15T13:03:38+00:00'
+currentMasterVersion: 1.21.10-gke.2000
+currentNodeVersion: 1.21.10-gke.2000
+databaseEncryption:
+  state: DECRYPTED
+endpoint: 34.74.11.242
+id: 08553c73723b451180e7e7a525c1f70c957b24493b984bb5ad03a63062c071be
+initialClusterVersion: 1.20.15-gke.2500
+initialNodeCount: 2
+instanceGroupUrls:
+- https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-c/instanceGroupManagers/gke-kubeflow-default-pool-9e0bf957-grp
+ipAllocationPolicy:
+  useRoutes: true
+labelFingerprint: cab6406c
+legacyAbac: {}
+location: us-east1-c
+locations:
+- us-east1-c
+loggingConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+    - WORKLOADS
+loggingService: logging.googleapis.com/kubernetes
+maintenancePolicy:
+  resourceVersion: e3b0c442
+masterAuth:
+  clusterCaCertificate: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQU0wd3hTUnhMV3dET20wMnl3UGhsK0V3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa1pXSmlaVEEyTm1VdFpqSmhNaTAwTjJabUxXSm1aVFF0WXpBMllqWm1ObU5pTmprMQpNQ0FYRFRJeU1EUXhOVEV5TURNek9Wb1lEekl3TlRJd05EQTNNVE13TXpNNVdqQXZNUzB3S3dZRFZRUURFeVJsClltSmxNRFkyWlMxbU1tRXlMVFEzWm1ZdFltWmxOQzFqTURaaU5tWTJZMkkyT1RVd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FDdEkrLzJQNTFlRERTd1JaNkIzWFRlb2hjbEJmRXJHa1AzUGk2eApaMUpTM0xaS0t6MFJDaUlLY2ZDb0RwSTM1U2MyaUViOEJiYkh1RUY0R2M5WjJ6VjZIdjBYc0ZhbVNXUHRlUzN0CndmUndaNTNEL2ZIR2VndHpDUzRpMGJYRllaZFk5MExtbkN3M0sxWjR6bW5sbGFLUnF2ajNuV2daVHZXV0NhNTkKY25OaTlXaE11ZkU1K1RpSy9tM1lYZDFIUk5lOVBBZko2MFVMV0RCbXZBZVhIcDFySGRDNkpKK0htVkxHQTY2QwpaT01UVjdYNVVJbTh2WjJJREw0dlRFTitDaDFBUURjVnRucFk5TXlEQlhFdk1rZ05uOHd0U0svMURBZEdTaTlqCmwrYU1ocjIrTkpRM0swaU55OGF6bXV2S3o3VE9DNkRsSytrME82WEhSVnFwUHFoVnc5alhDMTIzL01vZVc0UFMKZG5jNmJ0WWhmekFDcXJwZ0pnRU9jaFpnNFpYOS9QeHZpNkROYy81cW95VTYrQnU1ZVZQZHRrQ2NHYzRsTkhIZgpLckVIRWlzV1RRSVRHUlY1Wk4vdEJRM1VtcHpIRkpoeGtiU1VzbGw5Sm9mUElZSWs2Z3BFQlFFOW83SzJtVHlvCjdjbStOOXZQMkFjc1pXaWFPbTBERFBGZm1qRUNBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGQ2dwcWxNRlVPL3hrVVFWUlRqbWhrbWZEN1UxTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQmtlcFFOYzlRUWZNVy9URXpSNnFJU0hKcGJMRG0xU1hxM29hL0V5dEhzCkE1bUYzamZ5NEdSU0JtWFQxdTRMNjA4MGN2Z2lmVzJPWnpnSC9teTJaaWl1QXFrbitORVlaMlRaS29OZlZVMDEKL2FSK1FsYkxnamJPS2NrbThwUDlwY1hZT1dpbUxYemcyOEFBRlE2dEV6WUxUenVydXNZNlVPcnRhOEhQRUtzNQovN1M5c1BGaWM1Q3BPc0JyTzJkRitQR2psODQxOFF3L3VYdURJMnlQNldHV1YyY2xWY2ROekdtbGFKR3JPWXFxClpURGJublpSMWw4WGtIMVFqRWo3dkxuemw5UlIzTEZENnREVkExRnJhaUNsUzk2b0pDZk1ubDM3WVVhUmREckwKeHFiQjBNL2RlU1VFQy80UlFFOTMyMUVPSXZDbEpucVZuRGVQYWFoRC94N2dOUE44SlVKZXVCdHNWSWRDRVpwLwpwaWQxSDQ0b1pUQ3MxcHh0VTZiQ1pOUGwwZUxVRCtSSFloNG92OHhJRHlkWGZuejYwVHplcDdGUlZzenIzM0dlClJCUS9id1lLa3hUUkt5QU1iR2tkSm1XUHVJc3VpWHZwd0NWaFRMcEZiZG00T1pGb3lEYUFUYU14MHc3TCtrVjYKb1ZnYXVEZ01HZjE2ZXNvYitrek51dmc9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+masterAuthorizedNetworksConfig: {}
+monitoringConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+monitoringService: monitoring.googleapis.com/kubernetes
+name: kubeflow
+network: default
+networkConfig:
+  defaultSnatStatus: {}
+  network: projects/seraphic-disk-341414/global/networks/default
+  serviceExternalIpsConfig:
+    enabled: true
+  subnetwork: projects/seraphic-disk-341414/regions/us-east1/subnetworks/default
+nodeConfig:
+  diskSizeGb: 100
+  diskType: pd-standard
+  imageType: COS_CONTAINERD
+  machineType: e2-standard-8
+  metadata:
+    disable-legacy-endpoints: 'true'
+  oauthScopes:
+  - https://www.googleapis.com/auth/monitoring
+  - https://www.googleapis.com/auth/devstorage.read_only
+  - https://www.googleapis.com/auth/logging.write
+  serviceAccount: kubeflow-vm@seraphic-disk-341414.iam.gserviceaccount.com
+  shieldedInstanceConfig:
+    enableIntegrityMonitoring: true
+  workloadMetadataConfig:
+    mode: GKE_METADATA
+nodeIpv4CidrSize: 24
+nodePoolAutoConfig: {}
+nodePoolDefaults:
+  nodeConfigDefaults: {}
+nodePools:
+- config:
+    diskSizeGb: 100
+    diskType: pd-standard
+    imageType: COS_CONTAINERD
+    machineType: e2-standard-8
+    metadata:
+      disable-legacy-endpoints: 'true'
+    oauthScopes:
+    - https://www.googleapis.com/auth/monitoring
+    - https://www.googleapis.com/auth/devstorage.read_only
+    - https://www.googleapis.com/auth/logging.write
+    serviceAccount: kubeflow-vm@seraphic-disk-341414.iam.gserviceaccount.com
+    shieldedInstanceConfig:
+      enableIntegrityMonitoring: true
+    workloadMetadataConfig:
+      mode: GKE_METADATA
+  instanceGroupUrls:
+  - https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-c/instanceGroupManagers/gke-kubeflow-default-pool-9e0bf957-grp
+  locations:
+  - us-east1-c
+  management:
+    autoRepair: true
+    autoUpgrade: true
+  name: default-pool
+  podIpv4CidrSize: 24
+  selfLink: https://container.googleapis.com/v1/projects/seraphic-disk-341414/zones/us-east1-c/clusters/kubeflow/nodePools/default-pool
+  status: RUNNING
+  upgradeSettings:
+    maxSurge: 1
+  version: 1.21.10-gke.2000
+notificationConfig:
+  pubsub: {}
+releaseChannel:
+  channel: STABLE
+resourceLabels:
+  kf-name: kubeflow
+  managed-by-cnrm: 'true'
+  mesh_id: proj-1069328051067
+selfLink: https://container.googleapis.com/v1/projects/seraphic-disk-341414/zones/us-east1-c/clusters/kubeflow
+servicesIpv4Cidr: 10.75.240.0/20
+shieldedNodes:
+  enabled: true
+status: RUNNING
+subnetwork: default
+workloadIdentityConfig:
+  workloadPool: seraphic-disk-341414.svc.id.goog
+zone: us-east1-c

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opencv-deployment
+  labels:
+    app: opencv
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opencv
+  template:
+    metadata:
+      labels:
+        app: opencv
+    spec:
+      containers:
+      - name: opencv
+        image: torpeden88/opencv-test:latest
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do python3 opencv-test.py; sleep 100;done"]

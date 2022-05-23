@@ -1,0 +1,136 @@
+addonsConfig:
+  dnsCacheConfig: {}
+  gcePersistentDiskCsiDriverConfig:
+    enabled: true
+  horizontalPodAutoscaling: {}
+  httpLoadBalancing: {}
+  kubernetesDashboard:
+    disabled: true
+  networkPolicyConfig:
+    disabled: true
+authenticatorGroupsConfig: {}
+autoscaling:
+  autoscalingProfile: BALANCED
+clusterIpv4Cidr: 10.104.0.0/14
+createTime: '2022-05-06T09:01:16+00:00'
+currentMasterVersion: 1.21.11-gke.900
+currentNodeCount: 3
+currentNodeVersion: 1.21.11-gke.900
+databaseEncryption:
+  state: DECRYPTED
+defaultMaxPodsConstraint:
+  maxPodsPerNode: '110'
+endpoint: 35.228.66.138
+id: da45ec9e32ce4ae28fbb6b877dedda168dc283c0e1304e5da2fc8cc572c3f8e6
+initialClusterVersion: 1.21.10-gke.2000
+instanceGroupUrls:
+- https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/europe-north1-a/instanceGroupManagers/gke-test-cluster-2-default-pool-1ff753ac-grp
+ipAllocationPolicy:
+  clusterIpv4Cidr: 10.104.0.0/14
+  clusterIpv4CidrBlock: 10.104.0.0/14
+  clusterSecondaryRangeName: gke-test-cluster-2-pods-da45ec9e
+  servicesIpv4Cidr: 10.108.0.0/20
+  servicesIpv4CidrBlock: 10.108.0.0/20
+  servicesSecondaryRangeName: gke-test-cluster-2-services-da45ec9e
+  useIpAliases: true
+labelFingerprint: 32aad466
+legacyAbac: {}
+location: europe-north1-a
+locations:
+- europe-north1-a
+loggingConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+    - WORKLOADS
+loggingService: logging.googleapis.com/kubernetes
+maintenancePolicy:
+  resourceVersion: e3b0c442
+masterAuth:
+  clusterCaCertificate: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQU96VzZOYW5aa3lSdit6TmJYYzdKQVV3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa1pEaGxOelF5TjJRdFpXSTNPUzAwTldJMExXSm1NVEV0WkdRM00yUmlOVGc0TUdRNApNQ0FYRFRJeU1EVXdOakE0TURFeE5sb1lEekl3TlRJd05ESTRNRGt3TVRFMldqQXZNUzB3S3dZRFZRUURFeVJrCk9HVTNOREkzWkMxbFlqYzVMVFExWWpRdFltWXhNUzFrWkRjelpHSTFPRGd3WkRnd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FERFNvYW5tRTBIckNNMXBxeTA1bFFVTmhPWC9zRjQwNW9DL09vQQpWWmlDOWxBZ2NOc0FpaFRZdlBWbU93bWJWdnRFWnZKVW1XQ1pOSkIvUDRxaWtWdlE0QmZvVE1DNEtEUjBMYTRqCi90WG5kUllYYmJIVVdNVDNiNzZJRlRxdEFSTzZEdWd3OStObGQwUmlLN0RrS0RXaE1GZ3NHODBsTEkwYlRZK1cKb0gzYTVhTE0wbXdmRzRidXVHcG1XeHdLa0JPQ003SFpEK3lHeEI0Um5GcWYrMDBNMWRRaCtGejFQUU02U3BDWgpEOGRWY3VsZG9iUXF0blUyd2gwUVVRR2VTNjRzY1FhUlY3aDZZNGNXZjhXdDhZMExDenN2bVVFN2V4WUdVOTFPCjRPd3FTK0E0TFNpZUhQZFFwbUlmUnU2WmpEOUJlejFvZWw0WnB1bnROZjVzcGNYeFE1YjlVSVpUR08wZUhmNlcKTlJ2aE9QUVpKeDZ4dnlxaEFOVUdZcHNUUkdzOVlYY08yV2lBMVFsQ2hCZVBsMEQ0OHBKT093UjJWeUVKdmZaYgpOTm5pZTUxbVdPdVFDUHF2SHk3UXY5b3BOL1JMQzVlMjR2dmg0T2hpRXJyWTFIdVREejhSR3dtYnJoNVNLbnhECkoyTS9BSjZuWjlLZG14SllWZmlmMGxZVzZGY0NBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTDV0N25TOUJ2RjZuV2tRbFlRTHBIREYxaTJJTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQVJURkp4VlNQSHNJL3U5Yi9jb1JEaU1Zd2U5RTVoNURkaUtUSTRmcFFBCnlKMDBESWdyTVExSHBwMXhwc3Z2b2dqOEN6Uy95YnBZSFZROEtubE5KdGRrZ2w1RGtkOFFCZHdtUGYyQWZGYWkKQTRBVGRXTEdycWpwaFFKakt5UGYyZmRyY2tRNUF2a0d2dThCdk9XZnY1ZFlScXlxR1RNWFVUUU5EU3lORzIrTgpQc0NNd1RPazRwVjZobzVrZnZzYW4yclJjV1dNSEttdlRyODJOYlhDdWRFZzNsdkR3eEJnSmdtdkhUOGltbzVwCkg1VjVveWtPOXlpcHVlcFkzdjMvVDVUZm0zYngzQm1ibm5IK1Y1NWJoUElReWhwM2xnampBQ21hZWZQcmNhU0MKNXJ5UXU4WlZTOFhYMkxWQkVZRzRUTlJLeFc4em9aaHdXTVVoUU50ajFNbWNsSSs4V3MrZGpoZTQvY3RxcTVtagpHYTBYc2EvM2djUXlHK3VIN21laXR6ZnRKc1FUR0c2S2tCeHlVYVh4dFJTZUxPSTk2ZjhXb1dzeWRBdFlzY2J6CjZVTWZkam1FT2VJMGRZd0pkMzlVS25aUi80NExxTFZKZlNSL2xlWnE3SmVWUUd4UmxtK0Z5Rm1ZdlhLY2hDWTYKU3VmNVhuUlppL2dSRXhISXMvQzI4NGM9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+masterAuthorizedNetworksConfig: {}
+monitoringConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+monitoringService: monitoring.googleapis.com/kubernetes
+name: test-cluster-2
+network: default
+networkConfig:
+  datapathProvider: LEGACY_DATAPATH
+  defaultSnatStatus: {}
+  network: projects/seraphic-disk-341414/global/networks/default
+  serviceExternalIpsConfig: {}
+  subnetwork: projects/seraphic-disk-341414/regions/europe-north1/subnetworks/default
+nodeConfig:
+  diskSizeGb: 100
+  diskType: pd-standard
+  imageType: COS_CONTAINERD
+  machineType: e2-medium
+  metadata:
+    disable-legacy-endpoints: 'true'
+  oauthScopes:
+  - https://www.googleapis.com/auth/devstorage.read_only
+  - https://www.googleapis.com/auth/logging.write
+  - https://www.googleapis.com/auth/monitoring
+  - https://www.googleapis.com/auth/servicecontrol
+  - https://www.googleapis.com/auth/service.management.readonly
+  - https://www.googleapis.com/auth/trace.append
+  serviceAccount: default
+  shieldedInstanceConfig:
+    enableIntegrityMonitoring: true
+nodePoolAutoConfig: {}
+nodePoolDefaults:
+  nodeConfigDefaults: {}
+nodePools:
+- autoscaling: {}
+  config:
+    diskSizeGb: 100
+    diskType: pd-standard
+    imageType: COS_CONTAINERD
+    machineType: e2-medium
+    metadata:
+      disable-legacy-endpoints: 'true'
+    oauthScopes:
+    - https://www.googleapis.com/auth/devstorage.read_only
+    - https://www.googleapis.com/auth/logging.write
+    - https://www.googleapis.com/auth/monitoring
+    - https://www.googleapis.com/auth/servicecontrol
+    - https://www.googleapis.com/auth/service.management.readonly
+    - https://www.googleapis.com/auth/trace.append
+    serviceAccount: default
+    shieldedInstanceConfig:
+      enableIntegrityMonitoring: true
+  initialNodeCount: 3
+  instanceGroupUrls:
+  - https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/europe-north1-a/instanceGroupManagers/gke-test-cluster-2-default-pool-1ff753ac-grp
+  locations:
+  - europe-north1-a
+  management:
+    autoRepair: true
+    autoUpgrade: true
+  maxPodsConstraint:
+    maxPodsPerNode: '110'
+  name: default-pool
+  networkConfig:
+    podIpv4CidrBlock: 10.104.0.0/14
+    podRange: gke-test-cluster-2-pods-da45ec9e
+  podIpv4CidrSize: 24
+  selfLink: https://container.googleapis.com/v1/projects/seraphic-disk-341414/zones/europe-north1-a/clusters/test-cluster-2/nodePools/default-pool
+  status: RUNNING
+  upgradeSettings:
+    maxSurge: 1
+  version: 1.21.11-gke.900
+notificationConfig:
+  pubsub: {}
+releaseChannel:
+  channel: REGULAR
+resourceLabels:
+  framework: polyaxon
+selfLink: https://container.googleapis.com/v1/projects/seraphic-disk-341414/zones/europe-north1-a/clusters/test-cluster-2
+servicesIpv4Cidr: 10.108.0.0/20
+shieldedNodes:
+  enabled: true
+status: RUNNING
+subnetwork: default
+zone: europe-north1-a

@@ -1,0 +1,150 @@
+addonsConfig:
+  configConnectorConfig: {}
+  gcePersistentDiskCsiDriverConfig:
+    enabled: true
+  kubernetesDashboard:
+    disabled: true
+  networkPolicyConfig:
+    disabled: true
+autopilot: {}
+autoscaling:
+  autoscalingProfile: BALANCED
+binaryAuthorization: {}
+clusterIpv4Cidr: 10.58.48.0/20
+createTime: '2022-04-13T12:45:55+00:00'
+currentMasterVersion: 1.21.11-gke.1100
+currentNodeVersion: 1.21.11-gke.900
+databaseEncryption:
+  state: DECRYPTED
+defaultMaxPodsConstraint:
+  maxPodsPerNode: '110'
+description: KRM API Hosting control plane
+endpoint: 34.139.98.104
+id: 1d58b16de5cc4c37911e880ca35072249997b40706d14cd5b169953b54b3dc38
+initialClusterVersion: 1.21.6-gke.1503
+initialNodeCount: 1
+instanceGroupUrls:
+- https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-d/instanceGroupManagers/gke-krmapihost-kubef-krmapihost-kubef-403afcc4-grp
+- https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-b/instanceGroupManagers/gke-krmapihost-kubef-krmapihost-kubef-f4249bac-grp
+- https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-c/instanceGroupManagers/gke-krmapihost-kubef-krmapihost-kubef-73db0ea7-grp
+ipAllocationPolicy:
+  clusterIpv4Cidr: 10.58.48.0/20
+  clusterIpv4CidrBlock: 10.58.48.0/20
+  clusterSecondaryRangeName: gke-krmapihost-kubeflow-man-cluster-pods-1d58b16d
+  servicesIpv4Cidr: 10.58.64.0/24
+  servicesIpv4CidrBlock: 10.58.64.0/24
+  servicesSecondaryRangeName: gke-krmapihost-kubeflow-man-cluster-services-1d58b16d
+  useIpAliases: true
+labelFingerprint: a9dc16a7
+legacyAbac: {}
+location: us-east1
+locations:
+- us-east1-d
+- us-east1-b
+- us-east1-c
+loggingConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+    - WORKLOADS
+loggingService: logging.googleapis.com/kubernetes
+maintenancePolicy:
+  resourceVersion: e3b0c442
+masterAuth:
+  clusterCaCertificate: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQUo4bmcyYUlVY0dtc0RTTm1OaTQ2cVV3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa1kyWTVZamd3T1dRdE16RXpOQzAwTVdJNExXSTRNVFV0T1RabE16QmtOMkZpTTJWawpNQ0FYRFRJeU1EUXhNekV4TkRVMU5sb1lEekl3TlRJd05EQTFNVEkwTlRVMldqQXZNUzB3S3dZRFZRUURFeVJqClpqbGlPREE1WkMwek1UTTBMVFF4WWpndFlqZ3hOUzA1Tm1Vek1HUTNZV0l6WldRd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FDenVob0NhSnIwai9tNUgwTVN5V2E4bktrdU1zRTNSVHNOYlNLcwpGRHczRlVTRWpJVHZ5NDRqOU0vMXFmTFF2bWRab01kaEZSZ3Z5SjJ6MHJad1hHaWY3QTRWRXpZRlE5cTBxNXJyCnRINmlwZzhBK3E4bkMxSU9qbi92OFpKN1dZR01XNTJWYm5hZUVSeURGZUFYbUoyRVB6c0xtNFVlaU40TzU2SWoKRTUyRlF6bkkxTTdlMVJqdW9uemFOT1Y3VERvRDZJMVFQL3l3QVJ6UnU2cldIZ2M4d0FmejBoMllvYzdGUVJEKwp0czIxNDg2MHJSOXVYcHFIejdISmxCclNZU0lxMTdSbnBmbGtJcVd4VzBwa0t5WkMrTUVNSXl1NVZJK2FxWjhrCjhZYUdqSWNMWEx3NTFIUlZpK2NFbTNQaDRCbzdMNmFwZTA0dTlEWkdIYUdJa1pSbEoxRGR1bUt0c3NEK3QyaTkKQkFDT0JLblBpbFNuNDNpeCtHaFI4VDlHamFSeloxeEJ0ek9BZmxaWFhsT0Y2T3JOZC9mVERVbUJnWVVLd251TQo0WVFKTnY5T0M3ZGhuc1E2WVZqWWVzQTl2M1ZpNXk1T2d1UkFBdG5Mcjg0MUNYczNGOXgrZk9tZ0ZqcXpqUWZXCktDWkRiQkFBbTV3VE0zam1URkg5K0FOQW45OENBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTDB6M3VNVkJ0dFdoMThyTlJNQTNoSHpreFdGTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQWliWllRVVhYQmtBQ09KWVdIQUd0TW5SdDIydXRhRndyUFZHVHJoTy9FCmhpRTRMUWtKUnBVbk5KTHQ3QVMrTDFmS0tKdWErbDJ3ZmVieUxycXVTdE56WXMyRFdrZHJNbDgrYnF0elRqaGEKS2FHNEtjeit4b2dUWmdoc3djSWZyUFFORXIrU0VKVDExQ3RrUXNnTXhRckV1a3dPWkhRQmpEOGR6cElRZUFDdgpLdE1tYk9LQ2RTejZDSHNlMTdwbU95NXVxVUROMnMrcTJUY0l2Y3U0STVDQWJ5eGQ4Z1kwaVF1bytBMDNLVUhICk9uNTAvSkt0QjZBWjRKZmxabnp5UjNwNzVPUzF5bVZNUHcwRGxKengxc3Y1ODlqZXkxUXl3REhHU2dOVkt0WSsKUWxyUmxKbEQzRnptd2tmVmVOTWxreFJaZ3BzbEtMR0JWWkhSMGlhazVKOTkzY0N1aXNoMnA4TFNvb1F5TVhKRwpKcVl1aDJyZnMvWDdoMkVja08vc1V3b2RsRzhFVHYranJwTlFrL01nQjgyQ0N0bytNNlUvblhmQWlJRUJweEUyCnMwTCtEUjlWZTM2ZlM0Vkg2Z1laa2NpR1FrMUtEMTN3M3UxZ0lhMzY2R3hFb2lFWElZTUtGV0xsUHlYMDJzblAKS1dxNE00aG5pbjFoVHlHbm0rR3owVHM9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+masterAuthorizedNetworksConfig:
+  cidrBlocks:
+  - cidrBlock: 0.0.0.0/0
+    displayName: KRM API Hosting configured range
+  enabled: true
+monitoringConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+monitoringService: monitoring.googleapis.com/kubernetes
+name: krmapihost-kubeflow-man-cluster
+network: default
+networkConfig:
+  defaultSnatStatus: {}
+  network: projects/seraphic-disk-341414/global/networks/default
+  serviceExternalIpsConfig: {}
+  subnetwork: projects/seraphic-disk-341414/regions/us-east1/subnetworks/default
+nodeConfig:
+  diskSizeGb: 30
+  diskType: pd-standard
+  imageType: COS_CONTAINERD
+  machineType: e2-standard-2
+  metadata:
+    disable-legacy-endpoints: 'true'
+  oauthScopes:
+  - https://www.googleapis.com/auth/monitoring
+  - https://www.googleapis.com/auth/devstorage.read_only
+  - https://www.googleapis.com/auth/logging.write
+  serviceAccount: default
+  shieldedInstanceConfig:
+    enableIntegrityMonitoring: true
+  workloadMetadataConfig:
+    mode: GKE_METADATA
+nodePoolAutoConfig: {}
+nodePoolDefaults:
+  nodeConfigDefaults: {}
+nodePools:
+- autoscaling: {}
+  config:
+    diskSizeGb: 30
+    diskType: pd-standard
+    imageType: COS_CONTAINERD
+    machineType: e2-standard-2
+    metadata:
+      disable-legacy-endpoints: 'true'
+    oauthScopes:
+    - https://www.googleapis.com/auth/monitoring
+    - https://www.googleapis.com/auth/devstorage.read_only
+    - https://www.googleapis.com/auth/logging.write
+    serviceAccount: default
+    shieldedInstanceConfig:
+      enableIntegrityMonitoring: true
+    workloadMetadataConfig:
+      mode: GKE_METADATA
+  instanceGroupUrls:
+  - https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-d/instanceGroupManagers/gke-krmapihost-kubef-krmapihost-kubef-403afcc4-grp
+  - https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-b/instanceGroupManagers/gke-krmapihost-kubef-krmapihost-kubef-f4249bac-grp
+  - https://www.googleapis.com/compute/v1/projects/seraphic-disk-341414/zones/us-east1-c/instanceGroupManagers/gke-krmapihost-kubef-krmapihost-kubef-73db0ea7-grp
+  locations:
+  - us-east1-d
+  - us-east1-b
+  - us-east1-c
+  management:
+    autoRepair: true
+    autoUpgrade: true
+  maxPodsConstraint:
+    maxPodsPerNode: '110'
+  name: krmapihost-kubeflow-man-cluster-pool
+  networkConfig:
+    podIpv4CidrBlock: 10.58.48.0/20
+    podRange: gke-krmapihost-kubeflow-man-cluster-pods-1d58b16d
+  podIpv4CidrSize: 24
+  selfLink: https://container.googleapis.com/v1/projects/seraphic-disk-341414/locations/us-east1/clusters/krmapihost-kubeflow-man-cluster/nodePools/krmapihost-kubeflow-man-cluster-pool
+  status: RUNNING
+  upgradeSettings:
+    maxSurge: 1
+  version: 1.21.11-gke.900
+notificationConfig:
+  pubsub: {}
+privateClusterConfig:
+  enablePrivateNodes: true
+  masterIpv4CidrBlock: 172.16.0.128/28
+  peeringName: gke-nd2512397534cea08688-37f2-38e9-peer
+  privateEndpoint: 172.16.0.130
+  publicEndpoint: 34.139.98.104
+releaseChannel:
+  channel: REGULAR
+selfLink: https://container.googleapis.com/v1/projects/seraphic-disk-341414/locations/us-east1/clusters/krmapihost-kubeflow-man-cluster
+servicesIpv4Cidr: 10.58.64.0/24
+shieldedNodes:
+  enabled: true
+status: RUNNING
+subnetwork: default
+workloadIdentityConfig:
+  workloadPool: seraphic-disk-341414.svc.id.goog
+zone: us-east1
